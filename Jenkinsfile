@@ -21,3 +21,5 @@ steps {
 archiveArtifacts(artifacts: 'target/')
 }
 }
+}
+}
