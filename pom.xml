@@ -61,6 +61,9 @@
                 <version>3.0.2</version>
                 <configuration>
                     <archive>
+                        <manifest>
+                            <mainClass>basile.App</mainClass>
+                        </manifest>
                         <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
                     </archive>
                 </configuration>
