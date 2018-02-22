@@ -59,13 +59,8 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.0.2</version>
                 <configuration>
-                    <outputDirectory>
-                        ${project.build.directory}/libs
-                    </outputDirectory>
                     <archive>
                         <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>/libs</classpathPrefix>
                             <mainClass>basile.App</mainClass>
                         </manifest>
                         <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
