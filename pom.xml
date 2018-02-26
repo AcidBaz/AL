@@ -54,18 +54,6 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>basile.App</mainClass>
-                        </manifest>
-                        <manifestFile>${project.build.outputDirectory}/TEST/MANIFEST.MF</manifestFile>
-                    </archive>
-                </configuration>
-            </plugin>
         </plugins>
     </reporting>
     <build>
@@ -78,7 +66,7 @@
                         <manifest>
                             <mainClass>basile.App</mainClass>
                         </manifest>
-                        <manifestFile>${project.build.outputDirectory}/TEST/MANIFEST.MF</manifestFile>
+                        <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
                     </archive>
                 </configuration>
             </plugin>
