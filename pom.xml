@@ -68,6 +68,22 @@
             </plugin>
         </plugins>
     </reporting>
+    <build>
+    	<plugins>
+    		<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>basile.App</mainClass>
+                        </manifest>
+                        <manifestFile>${project.build.outputDirectory}/TEST/MANIFEST.MF</manifestFile>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <scm>
         <connection>scm:git:file//${project.basedir}</connection>
     </scm>
